@@ -2,9 +2,9 @@
 
 Want to see a bit about how Ruby blocks work?  Check out
 
-1. `wrap.rb`
-2. `bench.rb`
-3. `dispatcher.rb`
+1. [wrap.rb](wrap.rb)
+2. [bench.rb](bench.rb)
+3. [dispatcher.rb](dispatcher.rb)
 
 ## Questions, etc.?
 
