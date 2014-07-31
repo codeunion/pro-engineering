@@ -6,6 +6,8 @@ Want to see a bit about how Ruby blocks work?  Check out
 2. [bench.rb](bench.rb)
 3. [dispatcher.rb](dispatcher.rb)
 
+All three can be run from the command line.
+
 ## Questions, etc.?
 
 1. Where do all the Rails-y `rake` commands come from if they're not in the `Rakefile`?
