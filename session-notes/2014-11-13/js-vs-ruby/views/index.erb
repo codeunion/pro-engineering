@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      // var $ = jQuery;
+
+      // document.write("hello");
+
+      $(document).on('ready', function() {
+        $('.toggle').on('click', function(event) {
+          if ($(this).css('color') == 'rgb(0, 128, 0)') {
+            $(this).css({'color': 'rgb(0, 0, 0)'});
+          } else {
+            $(this).css({'color': 'rgb(0, 128, 0)'});
+          }
+        });
+
+        $('#user_search').on('submit', function(event) {
+          event.preventDefault();
+
+          var formData = $(this).serialize();
+          var ageLimit = $('#user_age').val();
+
+          $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            url: $(this).attr('action'),
+            data: formData,
+            success: function(response) {
+              var size = response.length;
+              $('#output').text("There are " + size + " users at least " + ageLimit + " years old.");
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 class="toggle">Users!</h1>
+    <p class="toggle">Hi there, friends.  Blah blah blah.</p>
+    <h2>No toggling, here.</h2>
+    <div class="toggle">It's toggle time!</div>
+
+    <form id="user_search" action="/users.json" method="get">
+      <input type="text" id="user_age" name="age">
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="output">
+      Submit the form, you mook!
+    </div>
+  </body>
+</html>
