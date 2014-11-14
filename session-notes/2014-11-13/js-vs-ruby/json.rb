@@ -2,9 +2,7 @@ require 'sinatra'
 require 'json'
 require 'faker'
 
-DATABASE = 1000.times.map do
-  {name: Faker::Name.name, age: rand(15..90)}
-end
+DATABASE = Array.new(1000) { { name: Faker::Name.name, age: rand(15..90) } }
 
 get '/' do
   erb(:index)
