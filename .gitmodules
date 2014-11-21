@@ -1,0 +1,3 @@
+[submodule "session-notes/2014-11-20/faceoff"]
+	path = session-notes/2014-11-20/faceoff
+	url = git@github.com:jfarmer/faceoff.git
