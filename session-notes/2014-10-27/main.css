@@ -1,0 +1,28 @@
+#page {
+  margin: 0 auto;
+  width: 900px;
+}
+
+#header h1 {
+  border: 1px solid red;
+}
+
+#header .user-links {
+  border: 1px solid blue;
+  float: right;
+}
+
+#content {
+  clear: both;
+}
+
+.picture-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.picture-list li {
+  float: left;
+  margin: 10px;
+}
