@@ -1,9 +1,0 @@
-<header>
-  <% if logged_in? %>
-    Hello, <strong><%= current_user.username %></strong>!
-    <%= link_to('Logout', logout_path) %>
-  <% else %>
-    <%= render partial: 'shared/login_form' %>
-    <%= link_to('Sign Up', new_user_path) %>
-  <% end %>
-</header>
