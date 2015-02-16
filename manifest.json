@@ -1,0 +1,11 @@
+{
+  "category": "guide",
+  "tags": [
+    "rails",
+    "rspec",
+    "object-oriented-design",
+    "test-driven-development",
+    "best-practices"
+  ],
+  "notes": "Master repo for pro-engineering workshop. Uses both wiki and files. README is sparse."
+}
